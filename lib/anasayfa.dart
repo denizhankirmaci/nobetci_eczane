@@ -1,3 +1,4 @@
+import 'package:eczane/sehir_detay.dart';
 import 'package:flutter/material.dart';
 
 import './iller.dart';
@@ -21,11 +22,13 @@ class AnaSayfa extends StatelessWidget {
             Card(
               child: InkWell(
                 onTap: () {
-                  print(ilMap.keys.first);
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (ctx) => DetaySayfa(im: ilMap)));
+                  //print(ilMap.keys.first);
+                  print(ilMap.values);
+                  Navigator.push(context, MaterialPageRoute(builder: (ctx)=>SehirDetay(ilAdi: ilMap.values.toString())));
+                  // Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //         builder: (ctx) => DetaySayfa(im: ilMap)));
                 },
                 child: Center(child: Text(ilMap.values.first)),
               ),

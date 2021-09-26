@@ -1,7 +1,7 @@
 List<Map<String, String>> iller = [
   {"01": "ADANA"},
   {"02": "ADIYAMAN"},
-  {"03": "AFYON"},
+  {"03": "AFYONKARAHİSAR"},
   {"04": "AĞRI"},
   {"05": "AMASYA"},
   {"06": "ANKARA"},
