@@ -1,16 +1,18 @@
 # eczane
 
-A new Flutter project.
+Flutter test project.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+Proje, API yardımı ile anlık olarak nöbetçi eczaneleri çekip listeleyen bir uygulamadır.
 
-A few resources to get you started if this is your first Flutter project:
+## Notes
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Proje, debug mode da internet erişimine açık fakat production (release) mode da internet erişimi yoktu. 
+Bunun çözümü ; android>app>src>main> AndroidManifest.xml dosyasına <uses-permission android:name="android.permission.INTERNET"/> kodunu eklemektir.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# v1
+- Uygulama listeleme yapıyor.
+
+# v2 (Development)
+- Listeleme sonrasında telefon ve harita özellikleri eklenecek.
