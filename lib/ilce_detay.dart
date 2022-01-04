@@ -61,6 +61,7 @@ class _IlceDetayState extends State<IlceDetay> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.ilceAdi + " Eczaneleri"),
+        foregroundColor: Colors.greenAccent,
       ),
       body: Center(
         child: Column(

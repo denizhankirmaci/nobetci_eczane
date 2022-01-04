@@ -25,8 +25,7 @@ class _DetaySayfaState extends State<DetaySayfa> {
     if (cevap.statusCode == 200) {
       Map icCevap = jsonDecode(utf8.decode(cevap.bodyBytes));
       if (icCevap["success"]) {
-        _eczaneListesi =
-            icCevap["data"]
+        _eczaneListesi = icCevap["data"]
             .map((e) => Eczane.fromJson(e))
             .toList()
             .cast<Eczane>();

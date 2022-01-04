@@ -63,6 +63,7 @@ class _SehirDetayState extends State<SehirDetay> {
     return Scaffold(
       appBar: AppBar(
         title: Text("${widget.ilAdi} İlçeleri"),
+        backgroundColor: Colors.deepOrange,
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

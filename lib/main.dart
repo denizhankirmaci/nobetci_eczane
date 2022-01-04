@@ -9,6 +9,7 @@ class AnaGiris extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primaryColor: Colors.green),
       home: AnaSayfa(),
     );
   }

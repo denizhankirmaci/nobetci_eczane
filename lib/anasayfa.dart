@@ -10,6 +10,7 @@ class AnaSayfa extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Nöbetçi Eczane"),
+        backgroundColor: Colors.green,
       ),
       body: GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -24,7 +25,11 @@ class AnaSayfa extends StatelessWidget {
                 onTap: () {
                   //print(ilMap.keys.first);
                   print(ilMap.values);
-                  Navigator.push(context, MaterialPageRoute(builder: (ctx)=>SehirDetay(ilAdi: ilMap.values.toString())));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (ctx) =>
+                              SehirDetay(ilAdi: ilMap.values.toString())));
                   // Navigator.push(
                   //     context,
                   //     MaterialPageRoute(
